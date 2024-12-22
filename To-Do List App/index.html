@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+          <div class="navbar-content">
+            <h1>To-Do List App 📃</h1>
+          </div>
+    </div>
+    <hr>
+    <div class="to-do-list">
+        <button class="addtask" id="add">+ Add Task</button>
+       <div class="tasklist">
+          <table class="tasks" border="1" id="tasktable">
+              <tr>
+                <th>Task Name</th>
+                <th>Description</th>
+              </tr>
+          </table>
+       </div>
+    </div>
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>Add a Task</h2>
+          <input type="text" placeholder="Task name" id="taskinput"/>
+          <textarea placeholder="Enter task Description" id="taskdes"></textarea>
+          <button class="submittask" id="submittasks">Add</button>
+        </div>
+      </div>    
+    <script src="logic.js"></script>
+</body>
+</html>
